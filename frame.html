@@ -15,10 +15,16 @@
 	background: #555; 
   }
 
-  /*.sizer {
-	width: 1500px;
+  body {
+	padding: 0;
+	border: 0;
+	margin: 0;
+  }
+  
+  .sizer {
+	width: 750px;
 	height: 1000px;
-  }*/
+  }
 
   .tiles {
     position: relative;
@@ -26,12 +32,22 @@
 	padding-top: 61.012272923%; /* 0.70164113862 */
 	background-color: black;
   }
+  
+  .tiles:fullscreen {
+	height: 100%;
+	padding-top: unset;
+  }
+	
+  .tiles:full-screen {
+	height: 100%;
+	padding-top: unset;
+  }
 
   .thumbn {
 	float: left;
 	width: 100%;
-	padding-top: 1.5%;
-	padding-bottom: 1.5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
 	cursor: pointer;
   }
   
@@ -58,7 +74,7 @@
     overflow: hidden;
 	background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: auto;
   }
 
   .photo {
@@ -70,22 +86,22 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    transition: transform;
   }
   
   .fullicon {
-	width: 20px
-	height: 20px
-	background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBvbHlnb24gZmlsbD0iIzAwMDAwMCIgcG9pbnRzPSIyOC4yNzMsOTAuMTA5IDAsOTAuMTA5IDAsNjEuODM2IDcuNzc1LDYxLjgzNiA3Ljc3NSw4Mi4zMzQgMjguMjczLDgyLjMzNCAgIj48L3BvbHlnb24+PC9nPjxnPjxwb2x5Z29uIGZpbGw9IiMwMDAwMDAiIHBvaW50cz0iNy43NzUsMzguMTY0IDAsMzguMTY0IDAsOS44OTEgMjguMjczLDkuODkxIDI4LjI3MywxNy42NjYgNy43NzUsMTcuNjY2ICAiPjwvcG9seWdvbj48L2c+PGc+PHBvbHlnb24gZmlsbD0iIzAwMDAwMCIgcG9pbnRzPSIxMDAsMzguMTY0IDkyLjIyNSwzOC4xNjQgOTIuMjI1LDE3LjY2NiA3MS43MjcsMTcuNjY2IDcxLjcyNyw5Ljg5MSAxMDAsOS44OTEgICI+PC9wb2x5Z29uPjwvZz48Zz48cG9seWdvbiBmaWxsPSIjMDAwMDAwIiBwb2ludHM9IjEwMCw5MC4xMDkgNzEuNzI3LDkwLjEwOSA3MS43MjcsODIuMzM0IDkyLjIyNSw4Mi4zMzQgOTIuMjI1LDYxLjgzNiAxMDAsNjEuODM2ICAiPjwvcG9seWdvbj48L2c+PC9zdmc+");  }
+	position: absolute;
+	width: 40px;
+	right: 12px;
+	bottom: 12px;
+	cursor: pointer;
   }
 </style>
 
 <div class="sizer">
 	<div class="tiles">
 		<div class="tile">
-			<div class="photo">
-				<div class="phototemp"></div>
-			</div>
+			<div class="photo"></div>
+			<img class="fullicon" onclick="toggleFullScreen();" src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' id='svg8' version='1.1' viewBox='0 0 35.235294 30.026178' height='30.026178mm' width='35.235294mm'%3E%3Cdefs id='defs2' /%3E%3Cmetadata id='metadata5'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate(-11.620329,-100.47755)' id='layer1'%3E%3Crect ry='2.7087677' y='100.47755' x='11.620329' height='30.026178' width='35.235294' id='rect815' style='fill:%23000000;fill-opacity:0.50196078;stroke:none;stroke-width:0.32159573;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3Cg id='g846'%3E%3Cpath style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' d='m 15.501632,104.49913 v 8.21862 h 2.004529 v -6.21409 h 6.214091 v -2.00453 z' id='rect823' /%3E%3Cpath id='path828' d='M 42.97432,104.49913 H 34.7557 v 2.00453 h 6.21409 v 6.21409 h 2.00453 z' style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3Cpath style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' d='m 15.501632,126.48214 h 8.21862 v -2.00453 h -6.21409 v -6.21409 h -2.00453 z' id='path830' /%3E%3Cpath id='path832' d='m 42.97432,126.48214 v -8.21862 h -2.004529 v 6.21409 H 34.7557 v 2.00453 z' style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"></img>
 		</div>
 		<div class="thumblist">
 			<img class="thumbn" src="https://lh3.googleusercontent.com/oIkeJk_E879GRj6LvpMP7EDXTcWb1Vq6JQ0meP0N9p6pnQmD6l9IM15w9DjVYKiUVj5VDkQZlrPZUF6uA59ztMM4vZMhAtiFQ5FAmi6vjYI0y9ENUSVD0AqOtcKDg35sjSiU2HcodPff-L1YSAkHqERw-CB16Pwyalhi7WCcA4Nrk3Mo54izvcxh2tgQTSGIlICYvPLpzfSm8Oj3yLV-FCEC8yhhvZfJnnHOEOZArnxzDZsWFjOZq4i_Nmpau62yHk9fSbU6-Iyr3h2B1KeM9fJXCXZ6EYpnHz2d-rcGIklTGEVgSDur3YSva4NQmW5eRQcv_yeC1hlUVK8R6Dl7x2S5lDWhQiYu3f4nWTnbJKuaklVJSSSE-m4Iz_XfeKvxY-2R_spny6FXcdnZBWFVBs8aA3yZANisRBIZNmN-g9VPRgrOCU3GJjVsQqXnioW9BrCUWaywYJVxqAXL0jiPwFtV5xLRzj3az6mLPPzAMP2bxWnF4LeT7s_FsGUxSg-SMUXORbDyGPj30ndyHSrrTLSke_PEdUjE0ExLynCBuZDqr6KHVTTfS_lpI4qYO9aKDUOWGnC6yTED8p5TSe1clx3uY8-ocv9qjIL5yCg42PrPKsCvoiNQTu17jCc6a0M_iuiR2SfOByaej0WOBtE3nBbf3hvjHK6Y8F9svDsPsgwIbN6Qp0GnCtQxhuJE8vXJ_tia0MD9aetS_SDGHlHIbFJF=w300"> </img>
@@ -113,12 +129,47 @@
 </div>
 
 <script>
+	var isfull = false;
+
 	function setNewImage(thumbn) {
-		jQuery('.tile').first().css({'background-image': 'url('+ thumbn.attr('src') +')'})
+		//jQuery('.tile').first().css({'background-image': 'url('+ thumbn.attr('src') +')'})
 		jp_img = thumbn.attr('src').slice(0, -4) + "s0";
 		jQuery('.photo').first().css({'background-image': 'url('+ jp_img +')'});
 	}
+	
+	function lerppercent(start, end, amt){
+		return ((1 - amt) * start + amt * end) * 100
+	}
 
+	function toggleFullScreen(){
+		if (isfull) {
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.mozCancelFullScreen) { /* Firefox */
+				document.mozCancelFullScreen();
+			} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+				document.webkitExitFullscreen();
+			} else if (document.msExitFullscreen) { /* IE/Edge */
+				document.msExitFullscreen();
+			}
+			
+			isfull = false;
+		} else {
+			var elem = document.getElementsByClassName("tiles")[0]
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			} else if (elem.mozRequestFullScreen) { /* Firefox */
+				elem.mozRequestFullScreen();
+			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+				elem.webkitRequestFullscreen();
+			} else if (elem.msRequestFullscreen) { /* IE/Edge */
+				elem.msRequestFullscreen();
+			}
+			
+			isfull = true;
+		}
+	}
+	
 	var jp_scale = 3.5
 	var jp_img = "https://lh3.googleusercontent.com/athegRGO9eFqf6upZJCWSY2UgsvRO9yAdvye6vLRBivnppSIshceQk7_hHQpi28LWuZ9CX1XvZI0OSJnC8jkpx0qAYyTpT4k_hRTgMV-sQYCZGaF64S0ZNPRoQi3ms8p-txhI_9KC_lMfwHXh-btljqO0y4G7lKNmiOlP_dzTMcP1WdBgDNOODWB3wa3qnc8GIYFxTC2ZgqDnaUd5hSAvLtaTOdPcwT21-8v-8fS9b5D2UcvTLppKsF3N2Qa78ZJSMbhfoykBtwPSeILQAt81F3mk-GT9xdjBahT8ZveNi4ivS5GOqhY7JhWhKrCr8-NDLMbFpBUryFH3i8JLFMH0A9ZLL_LgeFb9IGkR12KBAXoumNgEwYQaXZPgJ3gyR3TYQ_iZ-535o7zC4oWwvHFJNXY0dDHSI3RPcDGXWjTdUAacuye_aQiU2ud1uxBUKT4N6qBt9fqswta_n9I8QZaHvrPhGgrGScbZ33tb4BO2onwDOSg6W2kEVn8yQVobXYRFXzavwxI-56wkrP8H8ssj39HdtrGJwGSbbL9r4c7IdQ_l85L6BbIZiIjxt23_78VW5lJ2gFlAMM3zWKjx9NlhrPoSoErY6ihM2q-iG-uEMBYLxgDin3p79aOidLV1bC4p64ccuO0YQzL86YIwVSSAJdM8-IB3wjXgtS-IPIXwnrRFj9ozpvrOkax7yzquFD9E_PnyPUPEyQVmijiVg2NHnZi=s0";
 
@@ -143,7 +194,7 @@
 		jQuery(this).children('.photo').css({'transform':  'scale(' + jp_scale +')'});
     })
     .on('mousemove', function(e){
-		jQuery(this).children('.photo').css({'transform-origin': ((e.pageX - jQuery(this).offset().left) / jQuery(this).width()) * 100 + '% ' + ((e.pageY - jQuery(this).offset().top) / jQuery(this).height()) * 100 +'%'});
+		jQuery(this).children('.photo').css({'transform-origin': (e.pageX - jQuery(this).offset().left) / jQuery(this).width() * 100 + '% ' + (e.pageY - jQuery(this).offset().top) / jQuery(this).height() * 100 +'%'}); //lerppercent((1-1.4298505/ratio),(1+1.4298505/ratio),xpos)
     })
 	
 	setNewImage(jQuery('.thumbn').first())
