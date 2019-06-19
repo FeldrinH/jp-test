@@ -24,7 +24,15 @@
 	padding-top: 300px;*/
   }
   
-  .overlay {
+  .juhanpeegel {
+	all: initial;
+  }
+  
+  div.juhanpeegel {
+	display: block;
+  }
+  
+  .juhanpeegel.overlay {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -43,7 +51,7 @@
 	cursor: pointer;
   }
 
-  .tiles {
+  .juhanpeegel.tiles {
     position: relative;
     width: 100%;
 	padding-top: 59.639496782%; /* 0.70164113862 */
@@ -51,16 +59,16 @@
 	overflow: hidden;
   }
   
-  .tiles:fullscreen {
+  .juhanpeegel.tiles:fullscreen {
 	height: 100%;
 	padding-top: unset;
   }
-  .tiles:full-screen {
+  .juhanpeegel.tiles:full-screen {
 	height: 100%;
 	padding-top: unset;
   }
   
-  .container {
+  .juhanpeegel.container {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -68,7 +76,7 @@
 	right: 0;
   }
 
-  .thumbn {
+  .juhanpeegel.thumbn {
 	float: left;
 	width: 100%;
 	padding-top: 2%;
@@ -76,7 +84,7 @@
 	cursor: pointer;
   }
   
-  .thumbtext {
+  .juhanpeegel.thumbtext {
 	color: white;
 	text-align: center;
 	font-family: "Trebuchet MS", sans-serif;
@@ -85,7 +93,7 @@
 	cursor: pointer;
   }
   
-  .thumblist {
+  .juhanpeegel.thumblist {
 	position: relative;
 	float: left;
 	width: 15%;
@@ -96,20 +104,13 @@
 	scrollbar-width: thin;
   }
   
-  .tile {
+  .juhanpeegel.tile {
     position: relative;
     height: 100%;
     overflow: hidden;
   }
   
-  .tile:fullscreen {
-	left: 10%;
-  }
-  .tile:full-screen {
-	left: 10%;
-  }
-  
-  .loadtext {
+  .juhanpeegel.loadtext {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -121,7 +122,7 @@
 	overflow: hidden;
   }
 
-  .photo {
+  .juhanpeegel.photo {
     position: relative;
     top: 0;
     left: 0;
@@ -132,7 +133,7 @@
     background-size: contain;
   }
   
-  .fullicon {
+  .juhanpeegel.fullicon {
 	position: absolute;
 	width: 40px;
 	right: 12px;
@@ -146,57 +147,57 @@
 	<meta charset="UTF-8"> </meta>
 </head>
 <body>
-	<div class="tiles">
-		<div class="container">
-			<div class="thumblist">
-				<img class="thumbn" src="https://lh3.googleusercontent.com/ohP6JXBc1S5Vr9E0XWT5G8tf3wHqEc9IvZp4QPq8EJRMZtnR2xdnL0Tvq-LK34BejbtR20oWe-Kx-g4lbrGEKR4tYjPilKuYPD3B8qTTTlX7kQdm3TJUHgt-jibTudUg_dziFnwoGP3ZkxsjauQUJJPjku3WDWUV5oAvkyNMyNyIlrKIJxjryzxH_X8jy7Bu75WMBHjA3Qc3ztyRGgomOjHyTWKnNf-6TXIv_tEPhJSyP-bG5wmU1lWDh-37nQOSr40q-LmlBkcmmXR8oGUaD5tZLpJ2sP-r5X2ZJYhYBv_-3q3YUs9baYIFP8oiPBGxyMB-OaP6Uy1nj4CAcpqBCVfl627MWwfZUNTZVItdm81A7dy2HMVvXRJ_T3qpzepE_IaF92F2U9DtkeT6GfeBQtSSe83rYXsRxwTLN7YDozhigpvaO-Sw4ET3oPdNtMTN3uWNwWzQJInVLE6N7eY3AyDxyuYlo21TFzt5DRqjnR7QgwWNCzsUzYfZqTmfWF9pNN99sKzowTAeo2Vg-EH8zEvYM7NL6vrbalSlDPwjAX0Md5otOIlZg_SYMXHyp-OR9LeDCLGYcKotBLlohM_15Oo4JFNJfmrJkP1Lm-m22Tw7wKha6c49GIZ32l4O7b0_7SUrvG_llGdwBwwtZ8Ivhu-tL-yzgAhd75fPHTcSuftCDDMhp-Y7QJQwDrzwXhDNChnKzWThL_Ywo2W-p8flApQN=w300"> </img>
-				<div class="thumbtext">Kodu ja kool</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/7yVdv5Fk4Eb4R5JlENBUIqZdbtm8XwZW0OMCg6nNiLKC5gzbq164S4uqLxkm5RUisgT-I9xsuygB__ME17ZfG5yIRjyl-wI7WXQTHS0Tn9i0YWY3znQYrMSH7vvplwkQ3ymHsp_O5D310G7GeW8F2S101BWNnH3Ip33J5P8GI89WN2wbhg8qAKnWNcGDk6ccaZelABxkSdAoUUebzdZeWb6Ovl0yBLE8e0g53QGQlUL3BUkPdRnCuKew-EQOf-ef63ySa8rpNnq5tb7nrBBZLX89S14wl21NN8_aihhs2pbFq1Pu5GVt0bWTsb9ROuG-K8NvvNa50NDeNT4jvSn3QOmEjPTKIzcN7HLVqFBjsuqgVcGOhQZS3bMahfyXmpKVEw2YuMyqAwuQBCcAVz8P9pbwvuveneQSd8temTyykWWiUMJW1HHMtToF6rX9BH_0_A-H9i1Z07-It9FhWDyDXoCTdHwmEKkktklKdeuW5sQr7exOESe0QZQU8eeqdPUuYApLx9AD-xPkAfMi9wqQJDBqX0_vcZ0Ns6KqmcqEkvJuGpFBATqPC_mcV1v5E9Ff4nPSOd4gmNSsvs_stB4msA-dTM4hnyWf6hnTNJ3uqwEGVemP-MW05AJ79Nidzu2rMN1B6MOXSzyfB3xqhqgTMnHxTlT4HeVhRaMJ8Mjr4hCcwG70xRJPU106lORlXqcGhvLJ_7vgEI0Y0EQWfk1YtWUi=w300"> </img>
-				<div class="thumbtext">1939–1946</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/Iytw1kNDmYUQXex5vL6LmJBahEE71FR5_EdqhHxiZPd3g-37a_3C05rqLBj7gtfHkTfLo7xTM7-InmWCFSloMsixP7BtWXVTCQMgd6efOQQvc-_3jx8MyrIp5EcZs8PqFF9yUwbSQmrXtbAcHpMKGM28DOA2n1dO8IRbO8HNUYti9U54X09331fSRHgrDAuaevcsCww9m053ZGnJl-Tt0FPPkJyJggfWwJ5p-zYlkGt2JZNAXZXD9CXW86QlLISRNVy0bHDTmVpg6LmLtyGHusbZ801X667w04MD0xySuI0FO2i5VXW2Uy9d6M_nlW3HrRUkmwWO36cWQ-zmGTjdfywB-2UVqPo_drEb5fN9mkeO5m4TDGsX7tVC7E4a83ZY7Y2dBx3XmkIxhLRMNfpv_TlZ7kk3VpSQ9_zaf2ZO2Zg5iYBk8Ey2NoiKoW7ACaCXdJrP76ARePx9ZDPgBTArlNG0TLhEyUI_Eu3PZIq3d6NtzVI_E-8u0k6lUuLRxkHFAJ2viABTEILvVVDj6W1pj9NR9S9f6P6DKwAuv-BdJy9nFNKzudBxRRnj4FufRJHNhpHXpjrDPjb_s1J3exBmGPPm8heEziZG0uKiF6Lx0dONHBdFaYPazDtHe5W1TRR6TKR6vaJ44rXONRVxac7ftOGFiCxAE4upIndizrgdDAPsLu07Gmq5ukl-6AWiUimZyTVP21kd9JiPLQhFtMgin4gM=w300"> </img>
-				<div class="thumbtext">1950. aastad</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/I_gMW2HhVO6HfBOEU2HmLgujwkhl1nTByTQlvILdPdC7uilQ-GyyW7GGaEAz4Eq-yebYtlEQEp90TFBcgfrqYysWaL25dewcseeqWKF60b67V_7W7rRQIqzPRmnMm0gEanzH3rDF0Oy2sym5IhVKO8bnnwWlsdhitAfwgjYPAKzFHuK7ZenJ29JQOr_hI4g7mv4ozD3FBq4IBPPvhzSiftfk7Tb0vFoWVWBVvrjE6B3w09t7ci2rQExxVoCXNy9cQGMN3WjmS89joVQ57-FbwmzFtpYnQyS-W8Vc1isVvSx3Jij5Infh8PjAwkFsOVyLZ60u24kFFCfmvjWHZL8htRVO0r-hb3b_NwvNjzBIauCjii6Wne3dtNX-WBH0Cbd65nLjfJifaoP2WmMuMZR0o_Rgb6kH3ufQewSHvx5Dj6RKaMForlVmmjgsnSTAFQLlrwncQ7ccJNwF6pI0_s44FG4oRob0FQclxQyj241rvkDMAOj0If0w3znz9E0FRtrqEoQE-genwNw_vN0fYJyTQtNUmKFL8R7qgw7HegzREB4uuE3mAqDwBNIe4dq8DhqrWkV3EHYi1lAOE9pPwJ472C-jEbYHMh4GDR3WC-2nc2be2MhKLxjr2-kovZquiGiXB8yRbb52_Z8cTZ1MTcrZygAcCIXAR7a-moEGIhWs0lyxJVU1PoR7EjOKjA2Hyg0U6WJglCM52mcntkZsqB2GdGNl=w300"> </img>
-				<div class="thumbtext">1960. aastad</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/XCAB9KjKZT14nZwUfEk0Q1pzgjv5iTJIFYP42feudc0bvEiLUDmWBeqlqfH5a6UhDe1DP2pOyseqzIb24nKOquYyJwZ8XKYE-E7t6_tQqXlQFvpzDlpc6Gr0l2b35hkCpJSrIq8HvLLZiIViOm3dbXCbzRbbA6IRaC5I56q1EyBzw_uA_xMoZFIlQ8kFs5cJ-v_6hhWYx9rVZBEfnyO3dzhKPO21DKoBL0Jqmy2mVug6seQfCuZzHNzeT8u5ebn1kjZcu30TwcJz3fXvJr_yCGcG5Urr-UqMxzPZ5z1FO1XnL-LIeKxP1POBnjtGbVoEY0F4wrpiIUL6qOzh_9whj_MgeLl6LA5Tkm3VycoMwMOTvzvSGp_spIUc_OZtq5Hng_u79Y0kwt3OSVhfXmVEmefsjVntWB5zptH3rrcYazM5LKGZDhRmbHfL2-BcMHnE_lxLxIRoWzutFr9jNoRHNLmGXZZTAFXpS5tGZL9QymU4uis2dOHb2G4bhiJ-Hpv8ZxtI0AVJPx6mhe_mq_dULlAB0N-LKCSJC8vC71Y75YL1dhVe6wfE-nNo3-PcsgayLkay7uARJPOahG82BgiWQrxtmeRx8J2ePzEBOeGH-xfYfQ93ERIYKuvPAPd8HBEOiosAnOQXbz7wcuQv_VA_h1mdKbtnuyPsFNur0_KxE6arhA0cbCZbSjtjhnnA3c6NoKTppKtbUbr_W07DzQb3DLzZ=w300"> </img>
-				<div class="thumbtext">1969 ja pere</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/CIgNKDTIx6kxcKuF3vDISO3c1hB01XI5uBeCIzpRCwsGL2e7s-UB8jnpLc9QMdSAdvMS2U3OBdKnrb2UemAyWFWam96yCN9csQVLjMKTu40nvD5tK4qx-H2MDoHTURq6kB48Z2F_pxQX9Psq6KLnPao82iVW44k2WZF8inSuvkV5eYq1Kdo9wss0h8RMbtuZF7H0jf-u8ehCSrOCFz5Sh0odNRuEiEfOWZeI8gG5JEEnuF8dRV8ht1AYIGQbcUw65zXJYTL8ZNFnwQ0tGM9usPYgh6HBPl7v9RZgFgOmIyYu59umq0tSAYokgJkXEefny3PESLpFNPlgHH2Gx-Qe1-OzMxFwP4M5lonnf7t1DBz-1Cny0_iPui_Zv0-o7l8urT4eyhtm9bbqJMjoedezuC5cHq8jL-RbI3yM0kx5cd21fLQ-uJ4PJXSUMCtc-WhlHIPvlXiZHtknKmpIqk1Kc5a3w9jQWcMTzaRBDm5XCEAz2Ynu2ECvrbufaGWsZQQEJ4dTAzO2CCY7OoJdS7GLyqFRnjFOfKHg7oQSJ-ZEsRkLJrWaus_fY8DjsS9oOPKsmE-rOHU82XnlwrS-k0KkI53EJ9xSMUbrmmBEO7Mbf9w9kKga_sQyG67uqAvt4w_EHwZbSIufN7kntr-OaWaX1xEeFqWnF7P9AQksENw9r-NVMD8CPBby2HVx5MlW0FAGHHVp7V0lew8aQt-qh-RElNEE=w300"> </img>
-				<div class="thumbtext">1970. aastad</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/xHcw7lnZmouzrOwQf4pbuMQn6Je2Tp4feFHDcziBDB9fchmAJHq4ttSgU4kPS9Hj-kAhxOxZNZSx5yfr10X3f9OhiJwETOVir3ZiqRVECJQNS-vT49UolNZBRjrJZmcy2SultuRwRVGViogOBmyM3V-fjM9rFciJN3cyAuMdaExsvZ1_ZrERYIBjc0FWSLek2HmyJ7i7bAtMPiW5E6jQa1AUbeL321LmUfN59yZZ-RXr-x6YvwXejBBFyvSxZidCwKFagMvE7fOkXYFMg4XrZDA0qS1QOx2QFJo6LwMylXz8x6CtSyzQ2A7btmlrRhsjlxyz9F5lNhGswmlWX9fZJs7yh524kn2PFCeLWopjMcESAOA3JyJ_TCaQ4Hcdq3wO3dhm7ZJgihfiQ2cgChl2t6KNgLf_W_KSXwjJPk4OKKC1BxK69hED-2mgFhGHbyoJBqZoHpEmQXNoh8Vt4gHLvppIQFyBGlH9Dox6TdlbRHGH-BbW7no4rL34tDaymicIsnOJyjcJ3wVsAQTca8J6P4U4WOByRSu7pl8dOmpUYzL0neHHDZ4emvglWFUCa1X4fOUzQ8zoW-YUZZXEGtrY1tZI1JBQSPSvnhnNX8d2vuG1mVudweJrphwMKi_JfzC308OWtcEfBz5zQaHPu4Dv-hqU7OGJ4L9zKKQiZ7yJys-bOFJmO1ndxPkqZ1QoCOcJsrM_lchTMvKN9y9jtKIi8z_C=w300"> </img>
-				<div class="thumbtext">1976–1981</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/ogr8k2RgM6G6vmgqHHUx7zFoQ9s5uykF_CO6J1QnSIpC92btde8NR78Irfj2NCMP0QoRlSN92sHQ-bmdqGf_qTwgtheL5DLTMJGnrh8HACmkst8L-np69G2BnSkWxIxGDWIq26InMJ27JtFvmn6sFuIx8GSyfAuji2X1CJZJZmKTmoEA6MieCsrsA9wL9BRtJaHryHKKtyVpT3A868DWW7aMOo20CSTyHbmrFRAucOkuxrRF3ivMGvdZDOp4YYbmVJKC3MbMhmGLAJtnTM9A1mAwP4IjjpMYKOlKpYvP05W80UeNlR28OPScALTdH6Mua_WOg1QSkkpE4qVnwjPquqTNRQCR0_Vn6pIEU3sHEB6S-oaNRObMeNyDRTN5VpD_gsgPbA1gk2ngGAIV82QwSMkuZfLxmJ0rE2JyBAkgT5251_dPAeJoYsMICk3ZkYUf-UEvPwcgFNrq7qtJzsP62I970va9kg4dJgLoCk2avq1pLo8SFksWX8k8u4iFNaQOhuPC6_RTYE9YLFnKdk8JzwAconsiDaIhm9C2Js0ghe1YtNU2KHATpuCR-hlZm-zTsucB2rK8axYGFPFmNbgUHvt7PVm4AZcasYvGxX4D2CHidbNbt0Rl1A-6mmwsOci3HzYe5XAaeDChMKVk43ZQRsgsB7_NTj-alfCN6OOLMlvtWT7yKLeb09OunEbbbFu2emLdtdJEhLssd8MXEn8uupf_=w300"> </img>
-				<div class="thumbtext">19. mai 1979 hommik</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/cSjHDlnds56FlUOEVc__NO20F0VVTjWaqu0aYBQx4LYYr1brJsPqOU9tzMQVg7XfZ7cXzTNg8NFrbrakKHONwE4pgdEvEYa5DZar6GhwINIicuDbBNo3-96MKVDP_i854jrQYFcSE1VDIoeVN2OlZR8cQxd5ztfOuqtrNym8LFZAx9H0aFXJRDhLZdCYsD4p81fEiqqzAHW8WMx82vtIrsll0HnQbtR-EpSSGjhPyb8ePIbAH1mKS5j5TIGHbzPOZDLA5OScdjIAL_OS59-Tk-Az7qiiK70H3dVkYeQhrpt_3EVPPeEXZVgCZGkPVEQf4jB0h5GsDMozs7YQTCllMxATSOhdx0wO-T6dLG9QP21IlcpD0eT3ohWOoZp0E2mlDfGmwA1_qeH1EPBtsAr1TyoHvUFRpaf84nNISXS0ebs6cZ0qR1-BfqOPfZkJHqPZ7glOIDYi8CHBR9DYwmetKxkfAKtD3FoUnkZywWV1vEjBhJ4Ogno_8EpQfKQb5uXyKtiqf9381kkoVnZyD4oGRF2HqeeI9sgFlXrUCLNAyowbqZPuRCzszVZfeNRMiyWkU9VYUeU4_Xbj-J89OjRP3H-Zv5zM55m7vMS5jeDQnBqUJHBJhR2NxEM6gRyldcIk3cP1djyaNqCuy9K2HienupjRHk9_OEBQyoTV5HQVEtxN3PKK7FjXY2_YTc6V4bW6pprmAHIYjzzKRTpKJlX0KRZA=w300"> </img>
-				<div class="thumbtext">19. mai 1979 aktus</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/nohT7iMIq3BjZRePL8TAwIccrJQM1arQByGINgsnNn5-bGEh4WgE6hDGkHgT088ZC8zAZOZkLSu09B2VHXuzyvxeOSvLHHs23WQhM2QnQUjP0V9peaQypkbNubuyFyLO1ppHQhI0B2WVmYStOS2vdD1cbJH-g-hqs6uux3RdXkubamTlA3U6iXnglV4T8ndG3EUjNrwoXkxupmbnZ_XNujcQoN5dSd_pyTSY9X2K9ugADumKyAdp2TK1erv308rBroHnVaM1zQnFG-hrxDK-r4RetKecRQXkxjfgH1cZBYQq1hdVyy023tArcB2IomROnBVDC93gCN0AvjJGQ1KvLcesiSWZSQUj3YgPcc339vCTJTcRqQL1CLD_8wGEmcIciz32F2RUD2Vxbe7lM3YceZfyL9gcwTcbMpmSpFbKvqGIBHOnv-KGP1J3-vglkpcgcfopM0G2nnq0Wo0O7mAJuOhjciMC25Of9pTNfnjJXlb7KSR6lxqDYpUbhAHFR035Kf8ko-DrC8kMCDUy4922vCRpv9-wE8l9u-EaNBzDFSHIW3THTHWlQtXiDnSOpkPbwNNnbF1dcmAeFeIK-_ljslZB9Iqg-ocqJnATzb3JnMgbZDPZyqBuLlUQHlFUY4z4ysWcJeps0ytmh177iYb2KqTqvrrnLcHnxeo0DGz4oNSZ4cBm_mQjhRaMpWfg5R-mpUd_HVA8dWZZI9SYAI1L2e2G=w300"> </img>
-				<div class="thumbtext">Tele, raadio ja foto</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/VBt_CICLBQPQO7j02agvdjeXb_ytqOgKT0n8sut9-JfH7w8-ao4GCACgvDuRi9BUIJOxujSMoo_etByeSuQcKsvd4gCugFBpzTru0Wxf-x_WeRLBbIn63A5kd6Rx371nRIXTADwnKTcEJZ00ozbKvyl4ulo09ZLBHMnjDo_HGEMnb0hA7C3ZaAGRSwOqi7IlF_4CRWiSrEZDACqKb2Av7VePIhqsf81JzPUJb9ZxIU5j9TgQSNMFsNKUtzWxUG8JrFC-oJL8hLh8qOu3emzNUGouArpg9jBmtJdG01MdlF4erX3Tax9Z80-srqNqqcXdWb-L8Y3M3vvIKPjVmZOKGNUYiMs5GA4aeENSyi60_6rl1MHF46-XMlc1Do5WwLFP0ssm-Sy16ISVS-dfoRJrm1bYrA-JSL58eCEVzcD7F7NJp-uu2qPza3wrfVURxozfKwcTRHC2cmPqzQtN5XClnU7_6RGFQgbQpBuuJKFcgfdwYaku2VDMuh_JKNZ1PkhPb8az2AVUkBic1zRhy7lPPQRwEv8Axtjhmbwyoz8dN0UFbcmc4HYwPTDU4YJMxfvPbPMWfpAFi8LB8hwbd3BjnNJWRVd0RYZX0bT71NskJwi4IFEHmPlEXDfvz8dRXrofPj3Ros-pAPVdibzzZjbfbK9JU160Gj16otmnfoLhX5OJDg2Kxz8_Vo6pPKFZC9YOrjtCkap0C7-Dvm5YxyzYzRsr=w300"> </img>
-				<div class="thumbtext">1979–1981</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/dILSkjTjIpPI_DeLBWjBtMmoSbNi7W9s4M-SPS8aTQFJf8PmfWLfyELTsNxpgGfeNUGiIFXrArA_ZCaJk_6FuisBJpNZJ1KUU6D_GHvaHVi1KzpYZXuGdU-GOFpWbKQZbvsDH6P3OQyuTVqXRb1KOzXXFn40QeHMAXBgovGTlYAtRAzqqN_k9OSSvLnfemMBGur15TU-PQAO-dqsYj6oHHq_hWjCdDYwEEHRg0XTmOdVG3p1Z5DchT_8bgjoKCW11hjkXhArfRhlGOSFXJUclG4F9znIKkfv_bGCWtQVIUqgJnv-wgqHQQikda4IgH7gA9qwviO1PWz-Wltv6_kinVUfbFD1w69raI5A5UtRcOK320l_CfaftZ97JLtOldlNKwZ8hKI3cvB_Ema7K7-TgY_MMg0LYm46bfnxtWyCFbCnASrHdk6jFdgDTv7bHPAcXVdXyXiCiTOi2Gnk_71uCICJh6CwtZo4xx-M2TWuDek5HnbjoCx0Wbyq49-TBUj2duBobv5QI8GFsHQHnz0Lpq5WC2Ff4mth9uHtVRKk3XSacdaM2luMwzgefMfw4VgVDsSMncUNd18CIYHdH9pAYe6U1aHylouyJfABUSakveNYVobdW6ovRZRa_96cUhnA-7NjY2emfHWUW1YN0qZsvmvhRGX2DxciI5BoqqyOFK74WpSTlYa5dXO45KVLeh7P9ZmiLb4dxujgJmERJXk1rbO_=w300"> </img>
-				<div class="thumbtext">1980. aastate algus</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/k7c0xi-qhA8EAkYDwbF7Qg9_MeMLya8_Y2Fa8vw6_3il63bB3TZGKB4rFcAUlVaH3JInSMuujzgjQ2Va-prPx08sssSoIEMqRBmzUB-i1dJfikr5jTxl0lO4Si_AfxGHYtw5SzP9Kcjo2qwnRIoCJAwpZNaG1J2lBVNGGB3Bb7ehEyLJc072qbHM5CEyFdc1gTO6Twqnmk8YgnBktUX0XbPEFkHobZn-5EjYCsYmVn4jwkOMkyVr936x6SAEXBB9Qkl7ccdA2eddS28xmcj7iaDKwFGhq7RFdYmZ44pHp_tykK2hgnfhAFmrB2HnvikZ-tu624BNL6aA33SjMJ5ScS6R_464_pcy6CvEtuFUW7B4z6nPKkomMNayM3hjxiZbFxiozkPorb4QURDOCGhWi-wtMua4mNqdkhZbQPeFYHs2s_5_wNpwEcupRXme6atgnukNBF4js-klk8pVnIOssSGGkNjrVF4ntOWNapwOqe_ht615F0cLyJ1XfuEKIYOvkjAifcNIqJYbJYFsodlAysSLX8xM3bkktKsfdf5Wb8x8DLyp0gJ4P80oXa7MWn0v3ctuIHuaXVJv80-aQz-FiCTaGK8WGR9jYvCORa_R8vpcccT86iF--c4q7CKG8jUZSpqJ3HMaGHVA8IVtzS3d9lhmUZWkw38ZruExaTnfheqrAbv0TJpKTcTyVI42YHGwKUmIloCHZ95iDxEsoQ2H1AAq=w300"> </img>
-				<div class="thumbtext">1982–1983</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/oIkeJk_E879GRj6LvpMP7EDXTcWb1Vq6JQ0meP0N9p6pnQmD6l9IM15w9DjVYKiUVj5VDkQZlrPZUF6uA59ztMM4vZMhAtiFQ5FAmi6vjYI0y9ENUSVD0AqOtcKDg35sjSiU2HcodPff-L1YSAkHqERw-CB16Pwyalhi7WCcA4Nrk3Mo54izvcxh2tgQTSGIlICYvPLpzfSm8Oj3yLV-FCEC8yhhvZfJnnHOEOZArnxzDZsWFjOZq4i_Nmpau62yHk9fSbU6-Iyr3h2B1KeM9fJXCXZ6EYpnHz2d-rcGIklTGEVgSDur3YSva4NQmW5eRQcv_yeC1hlUVK8R6Dl7x2S5lDWhQiYu3f4nWTnbJKuaklVJSSSE-m4Iz_XfeKvxY-2R_spny6FXcdnZBWFVBs8aA3yZANisRBIZNmN-g9VPRgrOCU3GJjVsQqXnioW9BrCUWaywYJVxqAXL0jiPwFtV5xLRzj3az6mLPPzAMP2bxWnF4LeT7s_FsGUxSg-SMUXORbDyGPj30ndyHSrrTLSke_PEdUjE0ExLynCBuZDqr6KHVTTfS_lpI4qYO9aKDUOWGnC6yTED8p5TSe1clx3uY8-ocv9qjIL5yCg42PrPKsCvoiNQTu17jCc6a0M_iuiR2SfOByaej0WOBtE3nBbf3hvjHK6Y8F9svDsPsgwIbN6Qp0GnCtQxhuJE8vXJ_tia0MD9aetS_SDGHlHIbFJF=w300"> </img>
-				<div class="thumbtext">1982–1984</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/msOaHKdTQMZaBuGWFE8d0JMRUc1zFM00X86troUpkvnfQ7gH8iKfsLaKysQ77-lpQubf3oPMhO7XIvm8OrYy6UBifkn-zsnxaUvxwpg57Rrlc71H_I_fRkfnWS6nnUmEjTCOBjNUPcxpAJjJdXE658QEvJFKQZhl-d8OvTvREi3-OLU4cb2jBdnjSSZ5i6VSGNbk4jkCnlf1QmGrbvrcjTkdQtbIWYw0lO1kdEwDWA-tnvHh9WoqqYpPMpfyE4JRgQC83TYVe0wj28niPirhqSFkbuPRME-5C0u2yPgPCZbetJkwXbJ4qFYPzRJoVNrnR8vzEmFLYPgs_x079R0zVK1Aqv-vVzwCDSEnlKRCTIg3t92W5qlfK13kDAhoL5Wjth0hJ3zK2AxMG6LWyWyYyEi1SqLBBUSERa3uGTSMdBPhNDE107ie0R93yH61Icyx_MXf5E0Uj2XlzsQ6RO4KEir8pm256OwU8_9l-i8RwXryuvkOnF4tKvHURD7buaAlSHN3Skg09f9y8SXCB5pZxYvyR3QjwBzDON7YqpAKXLl-BcHN8l4Vmk4oEiKyQaKYeO26QSIFkn0Oa5o39LcZS0XIcN7ZYVFqikMdyvwXjmxL6FTw-Vtryd9tCa_VvPo8Fb0keyqbrwahr0mNIJOX1M0uBqdewujx-4JqRnuO5HI2aurZxIvZROpZ6EhQaKrAtFMll4q-UaiQ4QRZ4cNmnyJN=w300"> </img>
-				<div class="thumbtext">1984–1990</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/zL05SwETXriqSP3-E4CwAtLg5N4iNWABRzj6TmNqFr8s_dwNB5Fzx_M5HZzlKLsQknOytmbVdD1qBC7yu8_RMxNbcjCX0BgB4tZ1PGEvNEA_R3n0hfOowN5JFBzzQ6RP1Xvq_RL0-Xr3XgpHXcOVeo8dXMdSUNeALu-4EFdDDZYZZEziKO_DAguzt5-KpYbHpNdFFnx745uMl6zzEENklC4Hwk6G__Dwf_ylRzmZlI1QYys72WVvqfww1sIlV-RP97A-XUZ3VEanN2WaNbaTNy4k7RLzJn-tbbB1AsNvTQ0M6bVj0tbt2e1d-yAxUGIMLEsVTaZVUEbsp6rBXsMKLtUP1Bax7H3_5wJNyIyTy37G0CGKtyJFYXgYyRhGO3_NhDUQ-g5Y3x9fQqcZ66DoVtckLc8IANhgl8_3N5O2RMR0KsgQOjgITxGR66lrwvT8QIK3w7ckaj_gliGTk9mbTwDby5Q_cnfwfH83My1Wvwn3k7W9Rdb1jsnQFtABB-mITAL0SK2YyQkJAPpY8zMpTuevjSZpOJJzLNXzDFdIllyjNUAHFGrRl8OoxSuIEO-AtmUoxRjRRp1sg4N4v_7x0ve31RStONaW1YEd0OX652eJ5m6APBO_UZ8EAWklzSWCEzZ4GvTsAvoOeZPHHZNy1LV_2nl8Q-bQq6O4Yg0gUQDjdDqSXo8hxB3I7RKyDr6NF4q-C0jisfQj58OX5z6LpTK8=w300"> </img>
-				<div class="thumbtext">1989–1991</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/UDrPR7gi3FH9xkfQpIYKb3o2iCRAToGQYU7PL9SYBh786DU5g2ycLVOYR8FGkmBA6lFaiMZUlY0SKmFVwTkKCeGkEpH9ywdNLhwzRhP-ruErWUaFVBYbHL9uwn3LovYLHBQcfKBXIruH31TAiaQBx-FxI2l9vqt9YXeBxg_7lKF00VkRwrC4ZvqPw83qGL4ZBlqNVtx2LvXV8iMHQ2c1SSVOxta6grQP6ZPhypR7HX7Y1VIFCLo88PDjC0PqFdptGr3TiawAm2EMxzWHFEgGHlQk51sET1eLNn-nmQ9xZ-Pjo3Xguae9-LbQwtO9nizkipHdcSNmkLW9giYoRBjmrIYvzMj3ApxsyIytAS_-wJRfcezK7v_T4UbsZzGZLI27VCjQjCeAMTQ67x_VYI41My9JQXDt9LwncFo96_h3DPPTXz8HmI_dpufGW8LBBgRJU4hFMbWE-rgL-B9Y07Yd-Gec92-RhEQQoR51LhhhGmgyhHwHVDGO6RPTH288IehNX7kRnxUszURuO53jVjOOtxiEcCTBOdGZ8OlRGW7ZUpaBw4ph0Nfv7wSag_bAv_iqtosZkmd1uOBQ8kqQGhEyEGHNl3PPCBFetYx67BG-kw_8WwBYHrj_wNRd3864EoANeDXiJYpME9CU546-T9v8EUjeVFQmvCSN4r59XM7vpikckAudpdM7u4W5hFYkDYTJ57xYXbNaM5bBo1LMQ7VbqNZM=w300"> </img>
-				<div class="thumbtext">1992–1999</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/athegRGO9eFqf6upZJCWSY2UgsvRO9yAdvye6vLRBivnppSIshceQk7_hHQpi28LWuZ9CX1XvZI0OSJnC8jkpx0qAYyTpT4k_hRTgMV-sQYCZGaF64S0ZNPRoQi3ms8p-txhI_9KC_lMfwHXh-btljqO0y4G7lKNmiOlP_dzTMcP1WdBgDNOODWB3wa3qnc8GIYFxTC2ZgqDnaUd5hSAvLtaTOdPcwT21-8v-8fS9b5D2UcvTLppKsF3N2Qa78ZJSMbhfoykBtwPSeILQAt81F3mk-GT9xdjBahT8ZveNi4ivS5GOqhY7JhWhKrCr8-NDLMbFpBUryFH3i8JLFMH0A9ZLL_LgeFb9IGkR12KBAXoumNgEwYQaXZPgJ3gyR3TYQ_iZ-535o7zC4oWwvHFJNXY0dDHSI3RPcDGXWjTdUAacuye_aQiU2ud1uxBUKT4N6qBt9fqswta_n9I8QZaHvrPhGgrGScbZ33tb4BO2onwDOSg6W2kEVn8yQVobXYRFXzavwxI-56wkrP8H8ssj39HdtrGJwGSbbL9r4c7IdQ_l85L6BbIZiIjxt23_78VW5lJ2gFlAMM3zWKjx9NlhrPoSoErY6ihM2q-iG-uEMBYLxgDin3p79aOidLV1bC4p64ccuO0YQzL86YIwVSSAJdM8-IB3wjXgtS-IPIXwnrRFj9ozpvrOkax7yzquFD9E_PnyPUPEyQVmijiVg2NHnZi=w300"> </img>
-				<div class="thumbtext">1992–2004</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/iaalNEBgCGa_glyyzgRURhVGiXDjj2FxEr700z3UKaUC0Ly2an37y10mRHHVDfLW-MMqODdT0Iw13S6ODQyL9Z46eCB7ofjV-LU3tlIjp3fNtSG1nSLMUTDnm8TVYYZXDEw7Tg71bMt6wpW1Gxb7AhZ4M4MDNdKd8iFxvi-3fMQuio0Z0WcOYthPtv1_MLnaHnlMmP1Cma8dUon4mMg0i2eo87V_6O3Fl-GLm2LUK7DPpBMCw_90DDCtjXoFm0nBo5FGGrwoBCSx7W9X7z_baZzj1dCFhqshds_kCDe58WCK4TjryUibCjzsS5Rr1kDIGuaU8pVH3xzC5myZut0zbgakeZ7AAybEXc7GQFqYh0aVY-dPP3r89GBDvG_Ay-a2a9YhL5ERvVPyu4Cja1GGjVEd3GxLgOkKjOnyGb1ba9aUQbfSD9MwtOghL0KTQTTFmwEhjMwVWVwJ0EIQzOMUyntof7EowM5IoX37ddJiNVtYYgbamOo1foEhMzcn3vHiZhio8JNSLi3Fl2_u9ozE6YNRKdRrAA1AASb3-P8Anft7ZWMfGzu4V_pEw1TmUt06eXTM-ZoXoKFz_PezsATuoehJ-_QYGyQ7jDoQ4I4C1kvSgefctcilmMmJA-dIqzR-NWxChJc79y_bu6ifUr_wDZ7jAX0-gYcjkiOD0S-w3eGS6NofAjWnMa8IWifUey1m7XVQ8rT4r6iSeXY84HIwxHyl=w300"> </img>
-				<div class="thumbtext">1999–2003</div>
-				<img class="thumbn" src="https://lh3.googleusercontent.com/CO_zr2SfBFSjCdjpj_9W8m1VItd0qW5ZE3VHc7of4UUxrPZBgtYmB3Kday-wTRcC-_HYJwX-xDfLxQNTSjA9UJDCnfxAHwWluGarWtoTikfy-0DYtaYxm9VhJmJdpYk27zteoX9lEjlWQowrP2J6C_WXppNgNnz1KCTkskwtiki4eKadowYmg00JezHpz8BDZmWjeYDFOeo7mI0OuwKxk9LQ3gCtVXQtktpdvmA12DUmS03qi0_EKZAmP5bnDw1-Pp5aYKYL8JK4DgzNmUJr9yMVjASftiv-a2siF8NY0M5YFXc7Ebmsor08vQyzZXwvHWVqjvhzj4wfVoFCtfCe8rcnQ2mVTokic2FTVxsdDaEDaqCX080DZo7pIZIv3c_C2OxapaRnKRcz1hho7S8fGMIS67gT5jMq7ggMk72hHCjPVd-_F6osxYjlWGXWOvbaC22OAE7HaH3G2s5-2-b4bYe3MxUUlWVDL-7S5cD6kXkFP24p54On37fxmfianGBSS8CGTImt7vC6SkMPZQSwfNMH7HspszslmNLhKLTJs8rsIl8Phix0Q_Hj3EKgQbmB7Ru4PO2WqlTwwgzes7WX5tDaKgd_LEF6pBRi_sc7zxktEO9tX7Sz8CVwux9tNWW2NSFK3k9D-IroYfb98DkwIG3CXbtlu3aHUaPTHYpF35TLZ9auSsRvc9juTDVa6FMWegPK-wYyYeu_PgRpneJVfFsj=w300"> </img>
-				<div class="thumbtext">2004–2019</div>
+	<div class="juhanpeegel tiles">
+		<div class="juhanpeegel container">
+			<div class="juhanpeegel thumblist">
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/ohP6JXBc1S5Vr9E0XWT5G8tf3wHqEc9IvZp4QPq8EJRMZtnR2xdnL0Tvq-LK34BejbtR20oWe-Kx-g4lbrGEKR4tYjPilKuYPD3B8qTTTlX7kQdm3TJUHgt-jibTudUg_dziFnwoGP3ZkxsjauQUJJPjku3WDWUV5oAvkyNMyNyIlrKIJxjryzxH_X8jy7Bu75WMBHjA3Qc3ztyRGgomOjHyTWKnNf-6TXIv_tEPhJSyP-bG5wmU1lWDh-37nQOSr40q-LmlBkcmmXR8oGUaD5tZLpJ2sP-r5X2ZJYhYBv_-3q3YUs9baYIFP8oiPBGxyMB-OaP6Uy1nj4CAcpqBCVfl627MWwfZUNTZVItdm81A7dy2HMVvXRJ_T3qpzepE_IaF92F2U9DtkeT6GfeBQtSSe83rYXsRxwTLN7YDozhigpvaO-Sw4ET3oPdNtMTN3uWNwWzQJInVLE6N7eY3AyDxyuYlo21TFzt5DRqjnR7QgwWNCzsUzYfZqTmfWF9pNN99sKzowTAeo2Vg-EH8zEvYM7NL6vrbalSlDPwjAX0Md5otOIlZg_SYMXHyp-OR9LeDCLGYcKotBLlohM_15Oo4JFNJfmrJkP1Lm-m22Tw7wKha6c49GIZ32l4O7b0_7SUrvG_llGdwBwwtZ8Ivhu-tL-yzgAhd75fPHTcSuftCDDMhp-Y7QJQwDrzwXhDNChnKzWThL_Ywo2W-p8flApQN=w300"> </img>
+				<div class="juhanpeegel thumbtext">Kodu ja kool</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/7yVdv5Fk4Eb4R5JlENBUIqZdbtm8XwZW0OMCg6nNiLKC5gzbq164S4uqLxkm5RUisgT-I9xsuygB__ME17ZfG5yIRjyl-wI7WXQTHS0Tn9i0YWY3znQYrMSH7vvplwkQ3ymHsp_O5D310G7GeW8F2S101BWNnH3Ip33J5P8GI89WN2wbhg8qAKnWNcGDk6ccaZelABxkSdAoUUebzdZeWb6Ovl0yBLE8e0g53QGQlUL3BUkPdRnCuKew-EQOf-ef63ySa8rpNnq5tb7nrBBZLX89S14wl21NN8_aihhs2pbFq1Pu5GVt0bWTsb9ROuG-K8NvvNa50NDeNT4jvSn3QOmEjPTKIzcN7HLVqFBjsuqgVcGOhQZS3bMahfyXmpKVEw2YuMyqAwuQBCcAVz8P9pbwvuveneQSd8temTyykWWiUMJW1HHMtToF6rX9BH_0_A-H9i1Z07-It9FhWDyDXoCTdHwmEKkktklKdeuW5sQr7exOESe0QZQU8eeqdPUuYApLx9AD-xPkAfMi9wqQJDBqX0_vcZ0Ns6KqmcqEkvJuGpFBATqPC_mcV1v5E9Ff4nPSOd4gmNSsvs_stB4msA-dTM4hnyWf6hnTNJ3uqwEGVemP-MW05AJ79Nidzu2rMN1B6MOXSzyfB3xqhqgTMnHxTlT4HeVhRaMJ8Mjr4hCcwG70xRJPU106lORlXqcGhvLJ_7vgEI0Y0EQWfk1YtWUi=w300"> </img>
+				<div class="juhanpeegel thumbtext">1939–1946</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/Iytw1kNDmYUQXex5vL6LmJBahEE71FR5_EdqhHxiZPd3g-37a_3C05rqLBj7gtfHkTfLo7xTM7-InmWCFSloMsixP7BtWXVTCQMgd6efOQQvc-_3jx8MyrIp5EcZs8PqFF9yUwbSQmrXtbAcHpMKGM28DOA2n1dO8IRbO8HNUYti9U54X09331fSRHgrDAuaevcsCww9m053ZGnJl-Tt0FPPkJyJggfWwJ5p-zYlkGt2JZNAXZXD9CXW86QlLISRNVy0bHDTmVpg6LmLtyGHusbZ801X667w04MD0xySuI0FO2i5VXW2Uy9d6M_nlW3HrRUkmwWO36cWQ-zmGTjdfywB-2UVqPo_drEb5fN9mkeO5m4TDGsX7tVC7E4a83ZY7Y2dBx3XmkIxhLRMNfpv_TlZ7kk3VpSQ9_zaf2ZO2Zg5iYBk8Ey2NoiKoW7ACaCXdJrP76ARePx9ZDPgBTArlNG0TLhEyUI_Eu3PZIq3d6NtzVI_E-8u0k6lUuLRxkHFAJ2viABTEILvVVDj6W1pj9NR9S9f6P6DKwAuv-BdJy9nFNKzudBxRRnj4FufRJHNhpHXpjrDPjb_s1J3exBmGPPm8heEziZG0uKiF6Lx0dONHBdFaYPazDtHe5W1TRR6TKR6vaJ44rXONRVxac7ftOGFiCxAE4upIndizrgdDAPsLu07Gmq5ukl-6AWiUimZyTVP21kd9JiPLQhFtMgin4gM=w300"> </img>
+				<div class="juhanpeegel thumbtext">1950. aastad</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/I_gMW2HhVO6HfBOEU2HmLgujwkhl1nTByTQlvILdPdC7uilQ-GyyW7GGaEAz4Eq-yebYtlEQEp90TFBcgfrqYysWaL25dewcseeqWKF60b67V_7W7rRQIqzPRmnMm0gEanzH3rDF0Oy2sym5IhVKO8bnnwWlsdhitAfwgjYPAKzFHuK7ZenJ29JQOr_hI4g7mv4ozD3FBq4IBPPvhzSiftfk7Tb0vFoWVWBVvrjE6B3w09t7ci2rQExxVoCXNy9cQGMN3WjmS89joVQ57-FbwmzFtpYnQyS-W8Vc1isVvSx3Jij5Infh8PjAwkFsOVyLZ60u24kFFCfmvjWHZL8htRVO0r-hb3b_NwvNjzBIauCjii6Wne3dtNX-WBH0Cbd65nLjfJifaoP2WmMuMZR0o_Rgb6kH3ufQewSHvx5Dj6RKaMForlVmmjgsnSTAFQLlrwncQ7ccJNwF6pI0_s44FG4oRob0FQclxQyj241rvkDMAOj0If0w3znz9E0FRtrqEoQE-genwNw_vN0fYJyTQtNUmKFL8R7qgw7HegzREB4uuE3mAqDwBNIe4dq8DhqrWkV3EHYi1lAOE9pPwJ472C-jEbYHMh4GDR3WC-2nc2be2MhKLxjr2-kovZquiGiXB8yRbb52_Z8cTZ1MTcrZygAcCIXAR7a-moEGIhWs0lyxJVU1PoR7EjOKjA2Hyg0U6WJglCM52mcntkZsqB2GdGNl=w300"> </img>
+				<div class="juhanpeegel thumbtext">1960. aastad</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/XCAB9KjKZT14nZwUfEk0Q1pzgjv5iTJIFYP42feudc0bvEiLUDmWBeqlqfH5a6UhDe1DP2pOyseqzIb24nKOquYyJwZ8XKYE-E7t6_tQqXlQFvpzDlpc6Gr0l2b35hkCpJSrIq8HvLLZiIViOm3dbXCbzRbbA6IRaC5I56q1EyBzw_uA_xMoZFIlQ8kFs5cJ-v_6hhWYx9rVZBEfnyO3dzhKPO21DKoBL0Jqmy2mVug6seQfCuZzHNzeT8u5ebn1kjZcu30TwcJz3fXvJr_yCGcG5Urr-UqMxzPZ5z1FO1XnL-LIeKxP1POBnjtGbVoEY0F4wrpiIUL6qOzh_9whj_MgeLl6LA5Tkm3VycoMwMOTvzvSGp_spIUc_OZtq5Hng_u79Y0kwt3OSVhfXmVEmefsjVntWB5zptH3rrcYazM5LKGZDhRmbHfL2-BcMHnE_lxLxIRoWzutFr9jNoRHNLmGXZZTAFXpS5tGZL9QymU4uis2dOHb2G4bhiJ-Hpv8ZxtI0AVJPx6mhe_mq_dULlAB0N-LKCSJC8vC71Y75YL1dhVe6wfE-nNo3-PcsgayLkay7uARJPOahG82BgiWQrxtmeRx8J2ePzEBOeGH-xfYfQ93ERIYKuvPAPd8HBEOiosAnOQXbz7wcuQv_VA_h1mdKbtnuyPsFNur0_KxE6arhA0cbCZbSjtjhnnA3c6NoKTppKtbUbr_W07DzQb3DLzZ=w300"> </img>
+				<div class="juhanpeegel thumbtext">1969 ja pere</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/CIgNKDTIx6kxcKuF3vDISO3c1hB01XI5uBeCIzpRCwsGL2e7s-UB8jnpLc9QMdSAdvMS2U3OBdKnrb2UemAyWFWam96yCN9csQVLjMKTu40nvD5tK4qx-H2MDoHTURq6kB48Z2F_pxQX9Psq6KLnPao82iVW44k2WZF8inSuvkV5eYq1Kdo9wss0h8RMbtuZF7H0jf-u8ehCSrOCFz5Sh0odNRuEiEfOWZeI8gG5JEEnuF8dRV8ht1AYIGQbcUw65zXJYTL8ZNFnwQ0tGM9usPYgh6HBPl7v9RZgFgOmIyYu59umq0tSAYokgJkXEefny3PESLpFNPlgHH2Gx-Qe1-OzMxFwP4M5lonnf7t1DBz-1Cny0_iPui_Zv0-o7l8urT4eyhtm9bbqJMjoedezuC5cHq8jL-RbI3yM0kx5cd21fLQ-uJ4PJXSUMCtc-WhlHIPvlXiZHtknKmpIqk1Kc5a3w9jQWcMTzaRBDm5XCEAz2Ynu2ECvrbufaGWsZQQEJ4dTAzO2CCY7OoJdS7GLyqFRnjFOfKHg7oQSJ-ZEsRkLJrWaus_fY8DjsS9oOPKsmE-rOHU82XnlwrS-k0KkI53EJ9xSMUbrmmBEO7Mbf9w9kKga_sQyG67uqAvt4w_EHwZbSIufN7kntr-OaWaX1xEeFqWnF7P9AQksENw9r-NVMD8CPBby2HVx5MlW0FAGHHVp7V0lew8aQt-qh-RElNEE=w300"> </img>
+				<div class="juhanpeegel thumbtext">1970. aastad</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/xHcw7lnZmouzrOwQf4pbuMQn6Je2Tp4feFHDcziBDB9fchmAJHq4ttSgU4kPS9Hj-kAhxOxZNZSx5yfr10X3f9OhiJwETOVir3ZiqRVECJQNS-vT49UolNZBRjrJZmcy2SultuRwRVGViogOBmyM3V-fjM9rFciJN3cyAuMdaExsvZ1_ZrERYIBjc0FWSLek2HmyJ7i7bAtMPiW5E6jQa1AUbeL321LmUfN59yZZ-RXr-x6YvwXejBBFyvSxZidCwKFagMvE7fOkXYFMg4XrZDA0qS1QOx2QFJo6LwMylXz8x6CtSyzQ2A7btmlrRhsjlxyz9F5lNhGswmlWX9fZJs7yh524kn2PFCeLWopjMcESAOA3JyJ_TCaQ4Hcdq3wO3dhm7ZJgihfiQ2cgChl2t6KNgLf_W_KSXwjJPk4OKKC1BxK69hED-2mgFhGHbyoJBqZoHpEmQXNoh8Vt4gHLvppIQFyBGlH9Dox6TdlbRHGH-BbW7no4rL34tDaymicIsnOJyjcJ3wVsAQTca8J6P4U4WOByRSu7pl8dOmpUYzL0neHHDZ4emvglWFUCa1X4fOUzQ8zoW-YUZZXEGtrY1tZI1JBQSPSvnhnNX8d2vuG1mVudweJrphwMKi_JfzC308OWtcEfBz5zQaHPu4Dv-hqU7OGJ4L9zKKQiZ7yJys-bOFJmO1ndxPkqZ1QoCOcJsrM_lchTMvKN9y9jtKIi8z_C=w300"> </img>
+				<div class="juhanpeegel thumbtext">1976–1981</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/ogr8k2RgM6G6vmgqHHUx7zFoQ9s5uykF_CO6J1QnSIpC92btde8NR78Irfj2NCMP0QoRlSN92sHQ-bmdqGf_qTwgtheL5DLTMJGnrh8HACmkst8L-np69G2BnSkWxIxGDWIq26InMJ27JtFvmn6sFuIx8GSyfAuji2X1CJZJZmKTmoEA6MieCsrsA9wL9BRtJaHryHKKtyVpT3A868DWW7aMOo20CSTyHbmrFRAucOkuxrRF3ivMGvdZDOp4YYbmVJKC3MbMhmGLAJtnTM9A1mAwP4IjjpMYKOlKpYvP05W80UeNlR28OPScALTdH6Mua_WOg1QSkkpE4qVnwjPquqTNRQCR0_Vn6pIEU3sHEB6S-oaNRObMeNyDRTN5VpD_gsgPbA1gk2ngGAIV82QwSMkuZfLxmJ0rE2JyBAkgT5251_dPAeJoYsMICk3ZkYUf-UEvPwcgFNrq7qtJzsP62I970va9kg4dJgLoCk2avq1pLo8SFksWX8k8u4iFNaQOhuPC6_RTYE9YLFnKdk8JzwAconsiDaIhm9C2Js0ghe1YtNU2KHATpuCR-hlZm-zTsucB2rK8axYGFPFmNbgUHvt7PVm4AZcasYvGxX4D2CHidbNbt0Rl1A-6mmwsOci3HzYe5XAaeDChMKVk43ZQRsgsB7_NTj-alfCN6OOLMlvtWT7yKLeb09OunEbbbFu2emLdtdJEhLssd8MXEn8uupf_=w300"> </img>
+				<div class="juhanpeegel thumbtext">19. mai 1979 hommik</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/cSjHDlnds56FlUOEVc__NO20F0VVTjWaqu0aYBQx4LYYr1brJsPqOU9tzMQVg7XfZ7cXzTNg8NFrbrakKHONwE4pgdEvEYa5DZar6GhwINIicuDbBNo3-96MKVDP_i854jrQYFcSE1VDIoeVN2OlZR8cQxd5ztfOuqtrNym8LFZAx9H0aFXJRDhLZdCYsD4p81fEiqqzAHW8WMx82vtIrsll0HnQbtR-EpSSGjhPyb8ePIbAH1mKS5j5TIGHbzPOZDLA5OScdjIAL_OS59-Tk-Az7qiiK70H3dVkYeQhrpt_3EVPPeEXZVgCZGkPVEQf4jB0h5GsDMozs7YQTCllMxATSOhdx0wO-T6dLG9QP21IlcpD0eT3ohWOoZp0E2mlDfGmwA1_qeH1EPBtsAr1TyoHvUFRpaf84nNISXS0ebs6cZ0qR1-BfqOPfZkJHqPZ7glOIDYi8CHBR9DYwmetKxkfAKtD3FoUnkZywWV1vEjBhJ4Ogno_8EpQfKQb5uXyKtiqf9381kkoVnZyD4oGRF2HqeeI9sgFlXrUCLNAyowbqZPuRCzszVZfeNRMiyWkU9VYUeU4_Xbj-J89OjRP3H-Zv5zM55m7vMS5jeDQnBqUJHBJhR2NxEM6gRyldcIk3cP1djyaNqCuy9K2HienupjRHk9_OEBQyoTV5HQVEtxN3PKK7FjXY2_YTc6V4bW6pprmAHIYjzzKRTpKJlX0KRZA=w300"> </img>
+				<div class="juhanpeegel thumbtext">19. mai 1979 aktus</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/nohT7iMIq3BjZRePL8TAwIccrJQM1arQByGINgsnNn5-bGEh4WgE6hDGkHgT088ZC8zAZOZkLSu09B2VHXuzyvxeOSvLHHs23WQhM2QnQUjP0V9peaQypkbNubuyFyLO1ppHQhI0B2WVmYStOS2vdD1cbJH-g-hqs6uux3RdXkubamTlA3U6iXnglV4T8ndG3EUjNrwoXkxupmbnZ_XNujcQoN5dSd_pyTSY9X2K9ugADumKyAdp2TK1erv308rBroHnVaM1zQnFG-hrxDK-r4RetKecRQXkxjfgH1cZBYQq1hdVyy023tArcB2IomROnBVDC93gCN0AvjJGQ1KvLcesiSWZSQUj3YgPcc339vCTJTcRqQL1CLD_8wGEmcIciz32F2RUD2Vxbe7lM3YceZfyL9gcwTcbMpmSpFbKvqGIBHOnv-KGP1J3-vglkpcgcfopM0G2nnq0Wo0O7mAJuOhjciMC25Of9pTNfnjJXlb7KSR6lxqDYpUbhAHFR035Kf8ko-DrC8kMCDUy4922vCRpv9-wE8l9u-EaNBzDFSHIW3THTHWlQtXiDnSOpkPbwNNnbF1dcmAeFeIK-_ljslZB9Iqg-ocqJnATzb3JnMgbZDPZyqBuLlUQHlFUY4z4ysWcJeps0ytmh177iYb2KqTqvrrnLcHnxeo0DGz4oNSZ4cBm_mQjhRaMpWfg5R-mpUd_HVA8dWZZI9SYAI1L2e2G=w300"> </img>
+				<div class="juhanpeegel thumbtext">Tele, raadio ja foto</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/VBt_CICLBQPQO7j02agvdjeXb_ytqOgKT0n8sut9-JfH7w8-ao4GCACgvDuRi9BUIJOxujSMoo_etByeSuQcKsvd4gCugFBpzTru0Wxf-x_WeRLBbIn63A5kd6Rx371nRIXTADwnKTcEJZ00ozbKvyl4ulo09ZLBHMnjDo_HGEMnb0hA7C3ZaAGRSwOqi7IlF_4CRWiSrEZDACqKb2Av7VePIhqsf81JzPUJb9ZxIU5j9TgQSNMFsNKUtzWxUG8JrFC-oJL8hLh8qOu3emzNUGouArpg9jBmtJdG01MdlF4erX3Tax9Z80-srqNqqcXdWb-L8Y3M3vvIKPjVmZOKGNUYiMs5GA4aeENSyi60_6rl1MHF46-XMlc1Do5WwLFP0ssm-Sy16ISVS-dfoRJrm1bYrA-JSL58eCEVzcD7F7NJp-uu2qPza3wrfVURxozfKwcTRHC2cmPqzQtN5XClnU7_6RGFQgbQpBuuJKFcgfdwYaku2VDMuh_JKNZ1PkhPb8az2AVUkBic1zRhy7lPPQRwEv8Axtjhmbwyoz8dN0UFbcmc4HYwPTDU4YJMxfvPbPMWfpAFi8LB8hwbd3BjnNJWRVd0RYZX0bT71NskJwi4IFEHmPlEXDfvz8dRXrofPj3Ros-pAPVdibzzZjbfbK9JU160Gj16otmnfoLhX5OJDg2Kxz8_Vo6pPKFZC9YOrjtCkap0C7-Dvm5YxyzYzRsr=w300"> </img>
+				<div class="juhanpeegel thumbtext">1979–1981</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/dILSkjTjIpPI_DeLBWjBtMmoSbNi7W9s4M-SPS8aTQFJf8PmfWLfyELTsNxpgGfeNUGiIFXrArA_ZCaJk_6FuisBJpNZJ1KUU6D_GHvaHVi1KzpYZXuGdU-GOFpWbKQZbvsDH6P3OQyuTVqXRb1KOzXXFn40QeHMAXBgovGTlYAtRAzqqN_k9OSSvLnfemMBGur15TU-PQAO-dqsYj6oHHq_hWjCdDYwEEHRg0XTmOdVG3p1Z5DchT_8bgjoKCW11hjkXhArfRhlGOSFXJUclG4F9znIKkfv_bGCWtQVIUqgJnv-wgqHQQikda4IgH7gA9qwviO1PWz-Wltv6_kinVUfbFD1w69raI5A5UtRcOK320l_CfaftZ97JLtOldlNKwZ8hKI3cvB_Ema7K7-TgY_MMg0LYm46bfnxtWyCFbCnASrHdk6jFdgDTv7bHPAcXVdXyXiCiTOi2Gnk_71uCICJh6CwtZo4xx-M2TWuDek5HnbjoCx0Wbyq49-TBUj2duBobv5QI8GFsHQHnz0Lpq5WC2Ff4mth9uHtVRKk3XSacdaM2luMwzgefMfw4VgVDsSMncUNd18CIYHdH9pAYe6U1aHylouyJfABUSakveNYVobdW6ovRZRa_96cUhnA-7NjY2emfHWUW1YN0qZsvmvhRGX2DxciI5BoqqyOFK74WpSTlYa5dXO45KVLeh7P9ZmiLb4dxujgJmERJXk1rbO_=w300"> </img>
+				<div class="juhanpeegel thumbtext">1980. aastate algus</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/k7c0xi-qhA8EAkYDwbF7Qg9_MeMLya8_Y2Fa8vw6_3il63bB3TZGKB4rFcAUlVaH3JInSMuujzgjQ2Va-prPx08sssSoIEMqRBmzUB-i1dJfikr5jTxl0lO4Si_AfxGHYtw5SzP9Kcjo2qwnRIoCJAwpZNaG1J2lBVNGGB3Bb7ehEyLJc072qbHM5CEyFdc1gTO6Twqnmk8YgnBktUX0XbPEFkHobZn-5EjYCsYmVn4jwkOMkyVr936x6SAEXBB9Qkl7ccdA2eddS28xmcj7iaDKwFGhq7RFdYmZ44pHp_tykK2hgnfhAFmrB2HnvikZ-tu624BNL6aA33SjMJ5ScS6R_464_pcy6CvEtuFUW7B4z6nPKkomMNayM3hjxiZbFxiozkPorb4QURDOCGhWi-wtMua4mNqdkhZbQPeFYHs2s_5_wNpwEcupRXme6atgnukNBF4js-klk8pVnIOssSGGkNjrVF4ntOWNapwOqe_ht615F0cLyJ1XfuEKIYOvkjAifcNIqJYbJYFsodlAysSLX8xM3bkktKsfdf5Wb8x8DLyp0gJ4P80oXa7MWn0v3ctuIHuaXVJv80-aQz-FiCTaGK8WGR9jYvCORa_R8vpcccT86iF--c4q7CKG8jUZSpqJ3HMaGHVA8IVtzS3d9lhmUZWkw38ZruExaTnfheqrAbv0TJpKTcTyVI42YHGwKUmIloCHZ95iDxEsoQ2H1AAq=w300"> </img>
+				<div class="juhanpeegel thumbtext">1982–1983</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/oIkeJk_E879GRj6LvpMP7EDXTcWb1Vq6JQ0meP0N9p6pnQmD6l9IM15w9DjVYKiUVj5VDkQZlrPZUF6uA59ztMM4vZMhAtiFQ5FAmi6vjYI0y9ENUSVD0AqOtcKDg35sjSiU2HcodPff-L1YSAkHqERw-CB16Pwyalhi7WCcA4Nrk3Mo54izvcxh2tgQTSGIlICYvPLpzfSm8Oj3yLV-FCEC8yhhvZfJnnHOEOZArnxzDZsWFjOZq4i_Nmpau62yHk9fSbU6-Iyr3h2B1KeM9fJXCXZ6EYpnHz2d-rcGIklTGEVgSDur3YSva4NQmW5eRQcv_yeC1hlUVK8R6Dl7x2S5lDWhQiYu3f4nWTnbJKuaklVJSSSE-m4Iz_XfeKvxY-2R_spny6FXcdnZBWFVBs8aA3yZANisRBIZNmN-g9VPRgrOCU3GJjVsQqXnioW9BrCUWaywYJVxqAXL0jiPwFtV5xLRzj3az6mLPPzAMP2bxWnF4LeT7s_FsGUxSg-SMUXORbDyGPj30ndyHSrrTLSke_PEdUjE0ExLynCBuZDqr6KHVTTfS_lpI4qYO9aKDUOWGnC6yTED8p5TSe1clx3uY8-ocv9qjIL5yCg42PrPKsCvoiNQTu17jCc6a0M_iuiR2SfOByaej0WOBtE3nBbf3hvjHK6Y8F9svDsPsgwIbN6Qp0GnCtQxhuJE8vXJ_tia0MD9aetS_SDGHlHIbFJF=w300"> </img>
+				<div class="juhanpeegel thumbtext">1982–1984</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/msOaHKdTQMZaBuGWFE8d0JMRUc1zFM00X86troUpkvnfQ7gH8iKfsLaKysQ77-lpQubf3oPMhO7XIvm8OrYy6UBifkn-zsnxaUvxwpg57Rrlc71H_I_fRkfnWS6nnUmEjTCOBjNUPcxpAJjJdXE658QEvJFKQZhl-d8OvTvREi3-OLU4cb2jBdnjSSZ5i6VSGNbk4jkCnlf1QmGrbvrcjTkdQtbIWYw0lO1kdEwDWA-tnvHh9WoqqYpPMpfyE4JRgQC83TYVe0wj28niPirhqSFkbuPRME-5C0u2yPgPCZbetJkwXbJ4qFYPzRJoVNrnR8vzEmFLYPgs_x079R0zVK1Aqv-vVzwCDSEnlKRCTIg3t92W5qlfK13kDAhoL5Wjth0hJ3zK2AxMG6LWyWyYyEi1SqLBBUSERa3uGTSMdBPhNDE107ie0R93yH61Icyx_MXf5E0Uj2XlzsQ6RO4KEir8pm256OwU8_9l-i8RwXryuvkOnF4tKvHURD7buaAlSHN3Skg09f9y8SXCB5pZxYvyR3QjwBzDON7YqpAKXLl-BcHN8l4Vmk4oEiKyQaKYeO26QSIFkn0Oa5o39LcZS0XIcN7ZYVFqikMdyvwXjmxL6FTw-Vtryd9tCa_VvPo8Fb0keyqbrwahr0mNIJOX1M0uBqdewujx-4JqRnuO5HI2aurZxIvZROpZ6EhQaKrAtFMll4q-UaiQ4QRZ4cNmnyJN=w300"> </img>
+				<div class="juhanpeegel thumbtext">1984–1990</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/zL05SwETXriqSP3-E4CwAtLg5N4iNWABRzj6TmNqFr8s_dwNB5Fzx_M5HZzlKLsQknOytmbVdD1qBC7yu8_RMxNbcjCX0BgB4tZ1PGEvNEA_R3n0hfOowN5JFBzzQ6RP1Xvq_RL0-Xr3XgpHXcOVeo8dXMdSUNeALu-4EFdDDZYZZEziKO_DAguzt5-KpYbHpNdFFnx745uMl6zzEENklC4Hwk6G__Dwf_ylRzmZlI1QYys72WVvqfww1sIlV-RP97A-XUZ3VEanN2WaNbaTNy4k7RLzJn-tbbB1AsNvTQ0M6bVj0tbt2e1d-yAxUGIMLEsVTaZVUEbsp6rBXsMKLtUP1Bax7H3_5wJNyIyTy37G0CGKtyJFYXgYyRhGO3_NhDUQ-g5Y3x9fQqcZ66DoVtckLc8IANhgl8_3N5O2RMR0KsgQOjgITxGR66lrwvT8QIK3w7ckaj_gliGTk9mbTwDby5Q_cnfwfH83My1Wvwn3k7W9Rdb1jsnQFtABB-mITAL0SK2YyQkJAPpY8zMpTuevjSZpOJJzLNXzDFdIllyjNUAHFGrRl8OoxSuIEO-AtmUoxRjRRp1sg4N4v_7x0ve31RStONaW1YEd0OX652eJ5m6APBO_UZ8EAWklzSWCEzZ4GvTsAvoOeZPHHZNy1LV_2nl8Q-bQq6O4Yg0gUQDjdDqSXo8hxB3I7RKyDr6NF4q-C0jisfQj58OX5z6LpTK8=w300"> </img>
+				<div class="juhanpeegel thumbtext">1989–1991</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/UDrPR7gi3FH9xkfQpIYKb3o2iCRAToGQYU7PL9SYBh786DU5g2ycLVOYR8FGkmBA6lFaiMZUlY0SKmFVwTkKCeGkEpH9ywdNLhwzRhP-ruErWUaFVBYbHL9uwn3LovYLHBQcfKBXIruH31TAiaQBx-FxI2l9vqt9YXeBxg_7lKF00VkRwrC4ZvqPw83qGL4ZBlqNVtx2LvXV8iMHQ2c1SSVOxta6grQP6ZPhypR7HX7Y1VIFCLo88PDjC0PqFdptGr3TiawAm2EMxzWHFEgGHlQk51sET1eLNn-nmQ9xZ-Pjo3Xguae9-LbQwtO9nizkipHdcSNmkLW9giYoRBjmrIYvzMj3ApxsyIytAS_-wJRfcezK7v_T4UbsZzGZLI27VCjQjCeAMTQ67x_VYI41My9JQXDt9LwncFo96_h3DPPTXz8HmI_dpufGW8LBBgRJU4hFMbWE-rgL-B9Y07Yd-Gec92-RhEQQoR51LhhhGmgyhHwHVDGO6RPTH288IehNX7kRnxUszURuO53jVjOOtxiEcCTBOdGZ8OlRGW7ZUpaBw4ph0Nfv7wSag_bAv_iqtosZkmd1uOBQ8kqQGhEyEGHNl3PPCBFetYx67BG-kw_8WwBYHrj_wNRd3864EoANeDXiJYpME9CU546-T9v8EUjeVFQmvCSN4r59XM7vpikckAudpdM7u4W5hFYkDYTJ57xYXbNaM5bBo1LMQ7VbqNZM=w300"> </img>
+				<div class="juhanpeegel thumbtext">1992–1999</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/athegRGO9eFqf6upZJCWSY2UgsvRO9yAdvye6vLRBivnppSIshceQk7_hHQpi28LWuZ9CX1XvZI0OSJnC8jkpx0qAYyTpT4k_hRTgMV-sQYCZGaF64S0ZNPRoQi3ms8p-txhI_9KC_lMfwHXh-btljqO0y4G7lKNmiOlP_dzTMcP1WdBgDNOODWB3wa3qnc8GIYFxTC2ZgqDnaUd5hSAvLtaTOdPcwT21-8v-8fS9b5D2UcvTLppKsF3N2Qa78ZJSMbhfoykBtwPSeILQAt81F3mk-GT9xdjBahT8ZveNi4ivS5GOqhY7JhWhKrCr8-NDLMbFpBUryFH3i8JLFMH0A9ZLL_LgeFb9IGkR12KBAXoumNgEwYQaXZPgJ3gyR3TYQ_iZ-535o7zC4oWwvHFJNXY0dDHSI3RPcDGXWjTdUAacuye_aQiU2ud1uxBUKT4N6qBt9fqswta_n9I8QZaHvrPhGgrGScbZ33tb4BO2onwDOSg6W2kEVn8yQVobXYRFXzavwxI-56wkrP8H8ssj39HdtrGJwGSbbL9r4c7IdQ_l85L6BbIZiIjxt23_78VW5lJ2gFlAMM3zWKjx9NlhrPoSoErY6ihM2q-iG-uEMBYLxgDin3p79aOidLV1bC4p64ccuO0YQzL86YIwVSSAJdM8-IB3wjXgtS-IPIXwnrRFj9ozpvrOkax7yzquFD9E_PnyPUPEyQVmijiVg2NHnZi=w300"> </img>
+				<div class="juhanpeegel thumbtext">1992–2004</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/iaalNEBgCGa_glyyzgRURhVGiXDjj2FxEr700z3UKaUC0Ly2an37y10mRHHVDfLW-MMqODdT0Iw13S6ODQyL9Z46eCB7ofjV-LU3tlIjp3fNtSG1nSLMUTDnm8TVYYZXDEw7Tg71bMt6wpW1Gxb7AhZ4M4MDNdKd8iFxvi-3fMQuio0Z0WcOYthPtv1_MLnaHnlMmP1Cma8dUon4mMg0i2eo87V_6O3Fl-GLm2LUK7DPpBMCw_90DDCtjXoFm0nBo5FGGrwoBCSx7W9X7z_baZzj1dCFhqshds_kCDe58WCK4TjryUibCjzsS5Rr1kDIGuaU8pVH3xzC5myZut0zbgakeZ7AAybEXc7GQFqYh0aVY-dPP3r89GBDvG_Ay-a2a9YhL5ERvVPyu4Cja1GGjVEd3GxLgOkKjOnyGb1ba9aUQbfSD9MwtOghL0KTQTTFmwEhjMwVWVwJ0EIQzOMUyntof7EowM5IoX37ddJiNVtYYgbamOo1foEhMzcn3vHiZhio8JNSLi3Fl2_u9ozE6YNRKdRrAA1AASb3-P8Anft7ZWMfGzu4V_pEw1TmUt06eXTM-ZoXoKFz_PezsATuoehJ-_QYGyQ7jDoQ4I4C1kvSgefctcilmMmJA-dIqzR-NWxChJc79y_bu6ifUr_wDZ7jAX0-gYcjkiOD0S-w3eGS6NofAjWnMa8IWifUey1m7XVQ8rT4r6iSeXY84HIwxHyl=w300"> </img>
+				<div class="juhanpeegel thumbtext">1999–2003</div>
+				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/CO_zr2SfBFSjCdjpj_9W8m1VItd0qW5ZE3VHc7of4UUxrPZBgtYmB3Kday-wTRcC-_HYJwX-xDfLxQNTSjA9UJDCnfxAHwWluGarWtoTikfy-0DYtaYxm9VhJmJdpYk27zteoX9lEjlWQowrP2J6C_WXppNgNnz1KCTkskwtiki4eKadowYmg00JezHpz8BDZmWjeYDFOeo7mI0OuwKxk9LQ3gCtVXQtktpdvmA12DUmS03qi0_EKZAmP5bnDw1-Pp5aYKYL8JK4DgzNmUJr9yMVjASftiv-a2siF8NY0M5YFXc7Ebmsor08vQyzZXwvHWVqjvhzj4wfVoFCtfCe8rcnQ2mVTokic2FTVxsdDaEDaqCX080DZo7pIZIv3c_C2OxapaRnKRcz1hho7S8fGMIS67gT5jMq7ggMk72hHCjPVd-_F6osxYjlWGXWOvbaC22OAE7HaH3G2s5-2-b4bYe3MxUUlWVDL-7S5cD6kXkFP24p54On37fxmfianGBSS8CGTImt7vC6SkMPZQSwfNMH7HspszslmNLhKLTJs8rsIl8Phix0Q_Hj3EKgQbmB7Ru4PO2WqlTwwgzes7WX5tDaKgd_LEF6pBRi_sc7zxktEO9tX7Sz8CVwux9tNWW2NSFK3k9D-IroYfb98DkwIG3CXbtlu3aHUaPTHYpF35TLZ9auSsRvc9juTDVa6FMWegPK-wYyYeu_PgRpneJVfFsj=w300"> </img>
+				<div class="juhanpeegel thumbtext">2004–2019</div>
 			</div>
-			<div class="tile">
-				<div class="loadtext"> Pilt laeb... </div>
-				<div class="photo"></div>
-				<img class="fullicon" title="Täisekraan" onclick="toggleFullScreen();" src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' id='svg8' version='1.1' viewBox='0 0 35.235294 30.026178' height='30.026178mm' width='35.235294mm'%3E%3Cdefs id='defs2' /%3E%3Cmetadata id='metadata5'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate(-11.620329,-100.47755)' id='layer1'%3E%3Crect ry='2.7087677' y='100.47755' x='11.620329' height='30.026178' width='35.235294' id='rect815' style='fill:%23000000;fill-opacity:0.50196078;stroke:none;stroke-width:0.32159573;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3Cg id='g846'%3E%3Cpath style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' d='m 15.501632,104.49913 v 8.21862 h 2.004529 v -6.21409 h 6.214091 v -2.00453 z' id='rect823' /%3E%3Cpath id='path828' d='M 42.97432,104.49913 H 34.7557 v 2.00453 h 6.21409 v 6.21409 h 2.00453 z' style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3Cpath style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' d='m 15.501632,126.48214 h 8.21862 v -2.00453 h -6.21409 v -6.21409 h -2.00453 z' id='path830' /%3E%3Cpath id='path832' d='m 42.97432,126.48214 v -8.21862 h -2.004529 v 6.21409 H 34.7557 v 2.00453 z' style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"></img>
+			<div class="juhanpeegel tile">
+				<div class="juhanpeegel loadtext"> Pilt laeb... </div>
+				<div class="juhanpeegel photo"></div>
+				<img class="juhanpeegel fullicon" title="Täisekraan" onclick="toggleFullScreen();" src="data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' id='svg8' version='1.1' viewBox='0 0 35.235294 30.026178' height='30.026178mm' width='35.235294mm'%3E%3Cdefs id='defs2' /%3E%3Cmetadata id='metadata5'%3E%3Crdf:RDF%3E%3Ccc:Work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage' /%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:Work%3E%3C/rdf:RDF%3E%3C/metadata%3E%3Cg transform='translate(-11.620329,-100.47755)' id='layer1'%3E%3Crect ry='2.7087677' y='100.47755' x='11.620329' height='30.026178' width='35.235294' id='rect815' style='fill:%23000000;fill-opacity:0.50196078;stroke:none;stroke-width:0.32159573;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3Cg id='g846'%3E%3Cpath style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' d='m 15.501632,104.49913 v 8.21862 h 2.004529 v -6.21409 h 6.214091 v -2.00453 z' id='rect823' /%3E%3Cpath id='path828' d='M 42.97432,104.49913 H 34.7557 v 2.00453 h 6.21409 v 6.21409 h 2.00453 z' style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3Cpath style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' d='m 15.501632,126.48214 h 8.21862 v -2.00453 h -6.21409 v -6.21409 h -2.00453 z' id='path830' /%3E%3Cpath id='path832' d='m 42.97432,126.48214 v -8.21862 h -2.004529 v 6.21409 H 34.7557 v 2.00453 z' style='fill:%23ffffff;fill-opacity:1;stroke:none;stroke-width:0.29465994;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"></img>
 			</div>		
 		</div>
-		<div class="overlay" onclick="activateImage()"></div>
+		<div class="juhanpeegel overlay" onclick="activateImage()"></div>
 	</div>
 </body>
 
@@ -206,7 +207,7 @@
 	function setNewImage(thumbn) {
 		//jQuery('.tile').first().css({'background-image': 'url('+ thumbn.attr('src') +')'})
 		jp_img = thumbn.attr('src').slice(0, -4) + "s0";
-		jQuery('.photo').first().css({'background-image': 'url('+ jp_img +')', 'transform': 'scale(1)'});
+		jQuery('.juhanpeegel.photo').first().css({'background-image': 'url('+ jp_img +')', 'transform': 'scale(1)'});
 	}
 	
 	function lerppercent(start, end, amt){
@@ -227,7 +228,7 @@
 			
 			isfull = false;
 		} else {
-			var elem = document.getElementsByClassName("tiles")[0]
+			var elem = document.getElementsByClassName("juhanpeegel tiles")[0]
 			if (elem.requestFullscreen) {
 				elem.requestFullscreen();
 			} else if (elem.mozRequestFullScreen) { /* Firefox */
@@ -246,17 +247,17 @@
 	var jp_scalesteps = [1, 3.5 * Math.pow(0.75,3), 3.5 * Math.pow(0.75,2), 3.5 * Math.pow(0.75,1), 3.5, 3.5 * Math.pow(0.75,-1), 3.5 * Math.pow(0.75,-2)];
 	var jp_img = "https://lh3.googleusercontent.com/athegRGO9eFqf6upZJCWSY2UgsvRO9yAdvye6vLRBivnppSIshceQk7_hHQpi28LWuZ9CX1XvZI0OSJnC8jkpx0qAYyTpT4k_hRTgMV-sQYCZGaF64S0ZNPRoQi3ms8p-txhI_9KC_lMfwHXh-btljqO0y4G7lKNmiOlP_dzTMcP1WdBgDNOODWB3wa3qnc8GIYFxTC2ZgqDnaUd5hSAvLtaTOdPcwT21-8v-8fS9b5D2UcvTLppKsF3N2Qa78ZJSMbhfoykBtwPSeILQAt81F3mk-GT9xdjBahT8ZveNi4ivS5GOqhY7JhWhKrCr8-NDLMbFpBUryFH3i8JLFMH0A9ZLL_LgeFb9IGkR12KBAXoumNgEwYQaXZPgJ3gyR3TYQ_iZ-535o7zC4oWwvHFJNXY0dDHSI3RPcDGXWjTdUAacuye_aQiU2ud1uxBUKT4N6qBt9fqswta_n9I8QZaHvrPhGgrGScbZ33tb4BO2onwDOSg6W2kEVn8yQVobXYRFXzavwxI-56wkrP8H8ssj39HdtrGJwGSbbL9r4c7IdQ_l85L6BbIZiIjxt23_78VW5lJ2gFlAMM3zWKjx9NlhrPoSoErY6ihM2q-iG-uEMBYLxgDin3p79aOidLV1bC4p64ccuO0YQzL86YIwVSSAJdM8-IB3wjXgtS-IPIXwnrRFj9ozpvrOkax7yzquFD9E_PnyPUPEyQVmijiVg2NHnZi=s0";
 
-	jQuery('.thumbtext').fitText(1.1, {minFontSize: '12px', maxFontSize: '16px'})
+	jQuery('.juhanpeegel.thumbtext').fitText(1.1, {minFontSize: '12px', maxFontSize: '16px'})
 	
 	function activateImage() {
-		var overlaydiv = jQuery('.overlay').first()
+		var overlaydiv = jQuery('.juhanpeegel.overlay').first()
 		
 		overlaydiv.on('transitionend', function(){
 			overlaydiv.remove()
 			
 			//var first = true;
 			var zoomed = true;
-			jQuery('.tile')
+			jQuery('.juhanpeegel .tile')
 			.on('mouseover', function(){
 				/*if (first) {
 					first = false;
@@ -265,7 +266,7 @@
 				if (!zoomed) {
 					return;
 				}
-				jQuery(this).children('.photo').css({'transform': 'scale('+ jp_scalesteps[jp_scale] +')'});
+				jQuery(this).children('.juhanpeegel.photo').css({'transform': 'scale('+ jp_scalesteps[jp_scale] +')'});
 			})
 			/*.on('mouseout', function(){
 				jQuery(this).children('.photo').css({'transform': 'scale(1)'});
@@ -295,7 +296,7 @@
 				
 				//console.log(jp_scalesteps[jp_scale])
 				
-				jQuery(this).children('.photo').css({'transform':  'scale(' + jp_scalesteps[jp_scale] +')'});
+				jQuery(this).children('.juhanpeegel.photo').css({'transform':  'scale(' + jp_scalesteps[jp_scale] +')'});
 			});
 			
 			/*setTimeout(function(){
@@ -303,11 +304,19 @@
 			}, 300);*/
 			
 			(function() {
-				var phototag = jQuery('.photo').first();
-				var tiletag = jQuery('.tile').first();
+				var phototag = jQuery('.juhanpeegel.photo').first();
+				var tiletag = jQuery('.juhanpeegel.tile').first();
+				
+				jQuery('html')
+				.on('mousemove', function(e){
+					phototag.css({'transform-origin': Math.min(1, Math.max(0, (e.pageX - tiletag.offset().left) / tiletag.width())) * 100 + '% ' + Math.min(1, Math.max(0, (e.pageY - tiletag.offset().top) / tiletag.height())) * 100 +'%'}); //lerppercent((1-1.4298505/ratio),(1+1.4298505/ratio),xpos)
+				});
 				
 				try {
 					var frame = jQuery(parent.document.getElementById("juhanpeegel-viewer"));
+					if (frame.length <= 0) {
+						return;
+					}
 					
 					jQuery(parent.document.documentElement)
 					.on('mousemove', function(e){
@@ -316,25 +325,20 @@
 				} catch(err) {
 					console.log("Please move <iframe> to same origin as main page!")
 				}
-				
-				jQuery('html')
-				.on('mousemove', function(e){
-					phototag.css({'transform-origin': Math.min(1, Math.max(0, (e.pageX - tiletag.offset().left) / tiletag.width())) * 100 + '% ' + Math.min(1, Math.max(0, (e.pageY - tiletag.offset().top) / tiletag.height())) * 100 +'%'}); //lerppercent((1-1.4298505/ratio),(1+1.4298505/ratio),xpos)
-				});
 			})();
 		})
 		
 		overlaydiv.css({'transform': 'translateY(-100%)'})	
 	}
 	
-	setNewImage(jQuery('.thumbn').first())
+	setNewImage(jQuery('.juhanpeegel.thumbn').first())
 	
-	jQuery('.thumbn')
+	jQuery('.juhanpeegel.thumbn')
 	.on('click', function(){
 		setNewImage(jQuery(this))
 	})
 	
-	jQuery('.thumbtext')
+	jQuery('.juhanpeegel.thumbtext')
 	.on('click', function(){
 		setNewImage(jQuery(this).prev())
 	})
