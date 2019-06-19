@@ -20,9 +20,9 @@
 	padding: 0;
 	border: 0;
 	margin: 0;
-	width: 700px;
+	/*width: 700px;
 	margin: 0 auto;
-	padding-top: 300px;
+	padding-top: 300px;*/
   }
   
   .overlay {
@@ -307,8 +307,11 @@
 				var phototag = jQuery('.photo').first();
 				var tiletag = jQuery('.tile').first();
 				
-				jQuery('html')
-				.on('mousemove', function(e){
+				var root = jQuery('html');
+				if (parent) {
+					root = jQuery(parent.document.documentElement);
+				}
+				root.on('mousemove', function(e){
 					phototag.css({'transform-origin': Math.min(1, Math.max(0, (e.pageX - tiletag.offset().left) / tiletag.first().width())) * 100 + '% ' + Math.min(1, Math.max(0, (e.pageY - tiletag.first().offset().top) / tiletag.first().height())) * 100 +'%'}); //lerppercent((1-1.4298505/ratio),(1+1.4298505/ratio),xpos)
 				});
 			})();
