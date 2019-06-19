@@ -1,4 +1,6 @@
+<!-- Disable, if embedded without iframe! -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
 
 <style>
@@ -15,6 +17,7 @@
 	background: #555; 
   }
 
+  /* Disable, if embedded without iframe */
   body {
 	padding: 0;
 	border: 0;
@@ -24,13 +27,14 @@
 	padding-top: 300px;*/
   }
   
-  .juhanpeegel {
+  /* Enable, if embedding causes CSS style conflicts! */
+  /*.juhanpeegel {
 	all: initial;
   }
   
   div.juhanpeegel {
 	display: block;
-  }
+  }*/
   
   .juhanpeegel.overlay {
 	position: absolute;
@@ -131,6 +135,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+	transition: none;
   }
   
   .juhanpeegel.fullicon {
