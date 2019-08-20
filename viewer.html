@@ -445,6 +445,8 @@
 				<div class="juhanpeegel thumbtext">1999–2003</div>
 				<img class="juhanpeegel thumbn" src="https://lh3.googleusercontent.com/CO_zr2SfBFSjCdjpj_9W8m1VItd0qW5ZE3VHc7of4UUxrPZBgtYmB3Kday-wTRcC-_HYJwX-xDfLxQNTSjA9UJDCnfxAHwWluGarWtoTikfy-0DYtaYxm9VhJmJdpYk27zteoX9lEjlWQowrP2J6C_WXppNgNnz1KCTkskwtiki4eKadowYmg00JezHpz8BDZmWjeYDFOeo7mI0OuwKxk9LQ3gCtVXQtktpdvmA12DUmS03qi0_EKZAmP5bnDw1-Pp5aYKYL8JK4DgzNmUJr9yMVjASftiv-a2siF8NY0M5YFXc7Ebmsor08vQyzZXwvHWVqjvhzj4wfVoFCtfCe8rcnQ2mVTokic2FTVxsdDaEDaqCX080DZo7pIZIv3c_C2OxapaRnKRcz1hho7S8fGMIS67gT5jMq7ggMk72hHCjPVd-_F6osxYjlWGXWOvbaC22OAE7HaH3G2s5-2-b4bYe3MxUUlWVDL-7S5cD6kXkFP24p54On37fxmfianGBSS8CGTImt7vC6SkMPZQSwfNMH7HspszslmNLhKLTJs8rsIl8Phix0Q_Hj3EKgQbmB7Ru4PO2WqlTwwgzes7WX5tDaKgd_LEF6pBRi_sc7zxktEO9tX7Sz8CVwux9tNWW2NSFK3k9D-IroYfb98DkwIG3CXbtlu3aHUaPTHYpF35TLZ9auSsRvc9juTDVa6FMWegPK-wYyYeu_PgRpneJVfFsj=w300"> </img>
 				<div class="juhanpeegel thumbtext">2004–2019</div>
+				<img class="juhanpeegel thumbn" src=""> </img>
+				<div class="juhanpeegel thumbtext">Piltide autorid</div>
 			</div>
 			<div class="juhanpeegel tile">
 				<div class="juhanpeegel loadtext"> Pilt laeb... </div>
@@ -463,6 +465,7 @@
 		//jQuery('.tile').first().css({'background-image': 'url('+ thumbn.attr('src') +')'})
 		jp_img = thumbn.attr('src').slice(0, -4) + "s0";
 		jQuery('.juhanpeegel.photo').first().css({'background-image': 'url('+ jp_img +')', 'transform': 'scale(1)'});
+		jp_iscredits = (jp_img == "");
 	}
 	
 	function lerppercent(start, end, amt){
@@ -501,7 +504,8 @@
 	var jp_scale = 0
 	var jp_scalesteps = [1, 3.5 * Math.pow(0.75,3), 3.5 * Math.pow(0.75,2), 3.5 * Math.pow(0.75,1), 3.5, 3.5 * Math.pow(0.75,-1), 3.5 * Math.pow(0.75,-2)];
 	var jp_img = "https://lh3.googleusercontent.com/athegRGO9eFqf6upZJCWSY2UgsvRO9yAdvye6vLRBivnppSIshceQk7_hHQpi28LWuZ9CX1XvZI0OSJnC8jkpx0qAYyTpT4k_hRTgMV-sQYCZGaF64S0ZNPRoQi3ms8p-txhI_9KC_lMfwHXh-btljqO0y4G7lKNmiOlP_dzTMcP1WdBgDNOODWB3wa3qnc8GIYFxTC2ZgqDnaUd5hSAvLtaTOdPcwT21-8v-8fS9b5D2UcvTLppKsF3N2Qa78ZJSMbhfoykBtwPSeILQAt81F3mk-GT9xdjBahT8ZveNi4ivS5GOqhY7JhWhKrCr8-NDLMbFpBUryFH3i8JLFMH0A9ZLL_LgeFb9IGkR12KBAXoumNgEwYQaXZPgJ3gyR3TYQ_iZ-535o7zC4oWwvHFJNXY0dDHSI3RPcDGXWjTdUAacuye_aQiU2ud1uxBUKT4N6qBt9fqswta_n9I8QZaHvrPhGgrGScbZ33tb4BO2onwDOSg6W2kEVn8yQVobXYRFXzavwxI-56wkrP8H8ssj39HdtrGJwGSbbL9r4c7IdQ_l85L6BbIZiIjxt23_78VW5lJ2gFlAMM3zWKjx9NlhrPoSoErY6ihM2q-iG-uEMBYLxgDin3p79aOidLV1bC4p64ccuO0YQzL86YIwVSSAJdM8-IB3wjXgtS-IPIXwnrRFj9ozpvrOkax7yzquFD9E_PnyPUPEyQVmijiVg2NHnZi=s0";
-
+	var jp_iscredits = false;
+	
 	jQuery('.juhanpeegel.thumbtext').fitText(1.1, {minFontSize: '12px', maxFontSize: '16px'})
 	
 	function activateImage() {
@@ -518,7 +522,7 @@
 					first = false;
 					return;
 				}*/
-				if (!zoomed) {
+				if (jp_iscredits || !zoomed) {
 					return;
 				}
 				jQuery(this).children('.juhanpeegel.photo').css({'transform': 'scale('+ jp_scalesteps[jp_scale] +')'});
@@ -540,6 +544,10 @@
 			})*/
 			.on('wheel', function(event){
 				event.preventDefault();
+				
+				if (jp_iscredits) {
+					return;
+				}
 				
 				if (event.originalEvent.deltaY > 0) {
 					jp_scale -= 1;
